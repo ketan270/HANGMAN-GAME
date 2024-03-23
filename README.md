@@ -5,7 +5,7 @@
 
 - Clone or download the repository to your local machine.
 - Open the project directory in your terminal or command prompt.
-- Run the game using html by executing VS Code hangman.html.
+- Run the game using VS Code by executing hangman.html.
 - Follow the on-screen instructions to guess letters and uncover the hidden word.
 
 ## Features
