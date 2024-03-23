@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hangman Game</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #word-display {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #hangman-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .hangman-part {
+        width: 50px;
+        height: 5px;
+        background-color: black;
+        margin: 5px;
+    }
+    #guess-input {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<h1>Hangman Game</h1>
+<div id="word-display"></div>
+<div id="hangman-container">
+    <div class="hangman-part"></div>
+    <div class="hangman-part"></div>
+    <div class="hangman-part"></div>
+    <div class="hangman-part"></div>
+    <div class="hangman-part"></div>
+</div>
+<input type="text" id="guess-input" maxlength="1" placeholder="Enter your guess">
+<button onclick="checkGuess()">Guess</button>
+
+<script>
+    const wordList = ['python', 'hangman', 'computer', 'programming', 'game', 'developer', 'coding'];
+    let word = '';
+    let guessedLetters = [];
+    let attempts = 5;
+
+    function chooseWord() {
+        word = wordList[Math.floor(Math.random() * wordList.length)];
+    }
+
+    function displayWord() {
+        let display = '';
+        for (let letter of word) {
+            if (guessedLetters.includes(letter)) {
+                display += letter;
+            } else {
+                display += '_ ';
+            }
+        }
+        document.getElementById('word-display').textContent = display;
+    }
+
+    function checkGuess() {
+        let guess = document.getElementById('guess-input').value.toLowerCase().trim();
+        document.getElementById('guess-input').value = '';
+
+        if (guess.length !== 1 || !/[a-z]/.test(guess)) {
+            alert('Please enter a single alphabetic character.');
+            return;
+        }
+
+        if (guessedLetters.includes(guess)) {
+            alert('You already guessed that letter.');
+            return;
+        }
+
+        guessedLetters.push(guess);
+
+        if (!word.includes(guess)) {
+            attempts--;
+            updateHangman();
+            if (attempts === 0) {
+                alert(`Game Over! The word was: ${word}`);
+                resetGame();
+            } else {
+                alert('Incorrect guess!');
+                displayWord();
+            }
+        } else {
+            displayWord();
+            if (word.split('').every(letter => guessedLetters.includes(letter))) {
+                alert(`Congratulations! You guessed the word: ${word}`);
+                resetGame();
+            }
+        }
+    }
+
+    function updateHangman() {
+        let hangmanParts = document.getElementsByClassName('hangman-part');
+        for (let i = 0; i < hangmanParts.length; i++) {
+            if (i < 5 - attempts) {
+                hangmanParts[i].style.backgroundColor = 'red';
+            }
+        }
+    }
+
+    function resetGame() {
+        word = '';
+        guessedLetters = [];
+        attempts = 5;
+        let hangmanParts = document.getElementsByClassName('hangman-part');
+        for (let i = 0; i < hangmanParts.length; i++) {
+            hangmanParts[i].style.backgroundColor = 'black';
+        }
+        chooseWord();
+        displayWord();
+    }
+
+    chooseWord();
+    displayWord();
+</script>
+</body>
+</html>
