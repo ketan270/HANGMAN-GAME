@@ -1,8 +1,6 @@
 ![Blue Gradient Game Presentation](https://github.com/ketan270/HANGMAN-GAME/assets/146920220/faf3b81e-aa53-4fc1-be5c-0597cd7ab998)
 
-## HANGMAN-GAME
 
-This is a simple Hangman game built using html,css and python. The game randomly selects a word from a predefined list, and the player has to guess the letters in that word within a limited number of attempts.
 ## How To Play
 
 - Clone or download the repository to your local machine.
