@@ -27,5 +27,5 @@ This project is licensed under the [MIT](https://choosealicense.com/licenses/mit
 ## Acknowledgements
 
  - Inspired by the classic Hangman game.
- - Built for practicing Python programming.
+ - Built for practicing HTML, CSS and Python programming.
  - Thanks to contributors and supporters.
