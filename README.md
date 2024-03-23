@@ -1,3 +1,4 @@
+![Blue Gradient Game Presentation](https://github.com/ketan270/HANGMAN-GAME/assets/146920220/faf3b81e-aa53-4fc1-be5c-0597cd7ab998)
 
 ## HANGMAN-GAME
 
