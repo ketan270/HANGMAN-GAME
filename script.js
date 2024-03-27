@@ -10,21 +10,12 @@ const resultText = document.getElementById("result-text");
 //Options values for buttons
 let options = {
     Programming: [
-    "Apple",
-    "Blueberry",
-    "Mandarin",
-    "Pineapple",
-    "Pomegranate",
-    "Watermelon",
+    "Variable", "Function", "Algorithm", "Compiler", "Debugging", "Interface", "Framework", "Database", "JavaScript", "Python", "Ruby", "Java", "Algorithm", "Binary", "Syntax
   ],
-  Language: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
+  Language: [
+      "English", "Spanish", "French", "German", "Chinese", "Japanese", "Russian", "Arabic", "Portuguese", "Italian", "Dutch", "Swedish", "Korean", "Greek", "Turkish", "Polish", "Hindi", "Bengali", "Vietnamese", "Thai"],
   Countries: [
-    "India",
-    "Hungary",
-    "Kyrgyzstan",
-    "Switzerland",
-    "Zimbabwe",
-    "Dominica",
+   "Argentina", "Australia", "Brazil", "Canada", "Chile", "China", "Egypt", "France", "Germany", "Greece", "Italy", "Japan", "Mexico", "Netherlands", "Pakistan", "Russia", "Spain", "Thailand", "United Kingdom", "United States",
   ],
 };
 
