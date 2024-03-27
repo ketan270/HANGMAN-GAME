@@ -9,7 +9,7 @@ const resultText = document.getElementById("result-text");
 
 //Options values for buttons
 let options = {
-  fruits: [
+    Programming: [
     "Apple",
     "Blueberry",
     "Mandarin",
@@ -17,8 +17,8 @@ let options = {
     "Pomegranate",
     "Watermelon",
   ],
-  animals: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
-  countries: [
+  Language: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
+  Countries: [
     "India",
     "Hungary",
     "Kyrgyzstan",
