@@ -13,7 +13,7 @@
 - `hangman.html`: Contains the main game logic and user interface.
 - `README.md`: Information about the game and how to run it.
 
-## Contributing:
+## Contributing
 
 Contributions are always welcome!
 
