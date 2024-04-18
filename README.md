@@ -8,7 +8,7 @@
 - Run the game using VS Code by executing hangman.html.
 - Follow the on-screen instructions to guess letters and uncover the hidden word.
 
-## Features
+## Features:
 
 - `hangman.html`: Contains the main game logic and user interface.
 - `README.md`: Information about the game and how to run it.
