@@ -1,7 +1,7 @@
 ![Logo](https://github.com/ketan270/HANGMAN-GAME/assets/146920220/cad0c84a-2ecd-4242-8343-44be311bc791)
 
 
-## How To Play:
+## How To Play
 
 - Clone or download the repository to your local machine.
 - Open the project directory in your terminal or command prompt.
