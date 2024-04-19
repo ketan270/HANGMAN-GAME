@@ -19,7 +19,7 @@ Contributions are always welcome!
 
 If you'd like to `contribute` to this project, `fork` the repository, make your `changes`, and `submit` a pull request.
 
-## License:
+## License
 
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License. See the LICENSE file for detaill
 
