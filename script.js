@@ -6,7 +6,6 @@ const newGameButton = document.getElementById("new-game-button");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("result-text");
 
-//Options values for buttons
 let options = {
     Programming: [
     "Variable", "Function", "Algorithm", "Compiler", "Debugging", "Interface", "Framework", "Database", "JavaScript", "Python", "Ruby", "Java", "Algorithm", "Binary", "Syntax"
