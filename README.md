@@ -24,7 +24,7 @@ If you'd like to `contribute` to this project, `fork` the repository, make your 
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License. See the LICENSE file for detaill
 
 
-## Acknowledgements:
+## Acknowledgements
 
  - Inspired by the classic Hangman game.
  - Built for practicing HTML, CSS and Python programming.
